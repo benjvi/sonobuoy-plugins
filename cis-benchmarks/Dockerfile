@@ -1,4 +1,4 @@
-FROM aquasec/kube-bench:0.4.0
+FROM --platform=$TARGETPLATFORM raspbernetes/kube-bench:latest
 
 COPY entpks/config.yaml cfg/entpks.yaml
 
